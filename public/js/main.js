@@ -9,12 +9,12 @@ document.querySelectorAll(".video-preview").forEach(preview => {
   const playBtn = preview.querySelector(".video-preview__play");
 
   playBtn.addEventListener("click", () => {
-    if (currentPlayer) {
+    // if (currentPlayer) {
       // Якщо інше відео вже грає — зупинити його
-      currentPlayer.stopVideo();
-      currentPlayer.container.innerHTML = currentPlayer.previewContent;
-      currentPlayer = null;
-    }
+    //  currentPlayer.stopVideo();
+    //  currentPlayer.container.innerHTML = currentPlayer.previewContent;
+    //  currentPlayer = null;
+    // }
 
     const videoId = preview.dataset.video;
     const previewContent = preview.innerHTML;
