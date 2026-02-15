@@ -1,0 +1,110 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+  padding: 100px 0;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact__subtitle {
+  color: #666;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* CARD */
+
+.contact__card {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+
+.contact__icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Brand hover colors */
+
+.contact__card:nth-child(1):hover .contact__icon {
+  color: #ea4335;
+}
+
+.contact__card:nth-child(2):hover .contact__icon {
+  color: #229ed9;
+}
+
+.contact__card:nth-child(3):hover .contact__icon {
+  color: #25d366;
+}
+
+/* TEXT */
+
+.contact__card h3 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
+
+.contact__card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .contact__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 70px 0;
+  }
+
+  .contact__title {
+    font-size: 28px;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
